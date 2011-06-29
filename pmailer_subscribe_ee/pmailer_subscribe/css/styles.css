@@ -1,0 +1,56 @@
+label.error
+{
+	display:block;
+	color:red;
+	font-weight:bold;
+}
+
+input
+{
+	margin-bottom:5px;
+}
+
+#pmailer_sub_smart_form_enabled,
+#pmailer_smart_form_counter,
+#pmailer_dialogue_heading,
+#pmailer_subscription_submit,
+#pmailer_lists 
+{ 
+	display:none
+}
+
+#pmailer_sub_smart_form_error
+{ 
+	color:red;
+}
+
+.smartformlabel
+{
+	font-size:12px;
+}
+
+#pmailer_smart_form table,
+#pmailer_smart_form table td,
+#pmailer_smart_form table tr
+{
+	border: none !important;
+	padding: 2px !important;
+}
+
+#sfemail
+{
+	font-size: 10px;
+    padding: 4px 5px;
+    width: 200px;
+}
+
+label.error
+{
+	font-size:10px;
+	font-weight:normal;
+}
+
+input.error
+{
+	border:1px solid red;
+}

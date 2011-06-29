@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>ExpressionEngine pMailer Subscription Form Module</title>
+		<style type="text/css">
+			body {
+				font-family:Arial;
+				font-size:12px;
+			}
+		</style>
+	</head>
+</html>
+<body>
+	<h1>Contents</h1>
+	<ul>
+		<li><a href="#features">Module Features</a></li>
+		<li><a href="#install">Installation</a></li>
+	</ul>
+	
+	<p>&nbsp;</p>
+	
+	<a id="features"></a>
+	<h1>Module Features</h1>
+	<p>
+		The pMailer Subscription Form module allows you to place a form on your site that subscribes users directly into your pMailer mailing lists(s).
+	</p>
+	
+	<p>&nbsp;</p>
+	
+	<a id="install"></a>
+	<h1>Installation</h1>
+	<ol>
+		<li>Copy the <strong>pmailer_subscribe</strong> folder to your ExpressionEngine <strong>[system]/expressionengine/third_party</strong> folder</li>
+		<li><strong>Install</strong> the module from your ExpressionEngine control panel</li>
+		<li>Enter your <strong>API Url and Key</strong> in the Api Settings</li>
+		<li>Select the <strong>mailing list(s)</strong> you want the form to subscribe the user to, configure the <strong>smart form</strong> settings and save</li>
+		<li>
+			<strong>Copy the following code</strong> into your site's template:<br /><br />
+			<textarea rows="13" name="html" cols="165" style="border:solid 1px #cccccc; padding:20px;">
+
+<h5> pMailer Subscription </h5>
+{exp:pmailer_subscribe:create_form return="your-thank-you-page.php"} 	<!-- specify a "thank you" page to redirect to when the form has been submitted  -->
+<label>First Name: </label><br />
+<input type="text" name="fname" /><br />
+<label>Last Name: </label><br />
+<input type="text" name="lname" /><br />
+<label>Email: </label><br />
+<input type="text" name="email" class="required email" /><br /> 	<!-- this class sets this field as required and also checks for a valid email address  -->
+<input type="submit" value="submit" />
+{errors}
+{/exp:pmailer_subscribe:create_form}
+
+			</textarea>
+		</li>
+	</ol>
+</body>
